@@ -33,7 +33,7 @@
 </details>
 
 ## Credits
-**Xendyos**
+**Xendyexe**
 
 **Semper**
 
