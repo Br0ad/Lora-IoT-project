@@ -24,7 +24,7 @@
 
 1. Setup Feathers and IDE.
 2. Flash RX and TX to Feathers with Arduino IDE.
-3. Import NODE to Node Red and add bot token to any nodes with a red triangle.
+3. Import flows.json to Node Red and add bot token to any nodes with a red triangle.
 4. Wire TX Feather to DHT11 or other sensor.
 5. Plug in Feathers and correct COM/ACM ports in serial in if needed.
 6. Click Deploy wait for output in debug console and if so click the button next to inject.
@@ -32,14 +32,7 @@
 
 </details>
 
-
-<details>
-<summary>My top languages</summary>
-
-| Rank | Languages |
-|-----:|-----------|
-|     1| JavaScript|
-|     2| Python    |
-|     3| SQL       |
-
-</details>
+## Credits:
+**Xendyos**
+**Semper**
+**Litho**
