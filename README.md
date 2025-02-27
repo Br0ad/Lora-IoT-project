@@ -32,7 +32,9 @@
 
 </details>
 
-## Credits:
+## Credits
 **Xendyos**
+
 **Semper**
+
 **Litho**
