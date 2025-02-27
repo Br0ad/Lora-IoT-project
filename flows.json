@@ -1,0 +1,268 @@
+[
+    {
+        "id": "4890c3c60fad6350",
+        "type": "discordMessage",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "channelIdFilter": "",
+        "token": "",
+        "x": 380,
+        "y": 800,
+        "wires": [
+            [
+                "82205324b43dbd6a",
+                "cecaef4a0cc5e1af"
+            ]
+        ]
+    },
+    {
+        "id": "8c93107de6df04e4",
+        "type": "change",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 800,
+        "wires": [
+            [
+                "9e8f0c29fc354f61"
+            ]
+        ]
+    },
+    {
+        "id": "cecaef4a0cc5e1af",
+        "type": "debug",
+        "z": "f0de644b883e937c",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "4b815db15d597538",
+        "type": "inject",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "props": [
+            {
+                "p": "channel",
+                "v": "1343734668721258496",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1200",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 590,
+        "y": 720,
+        "wires": [
+            [
+                "9e8f0c29fc354f61"
+            ]
+        ]
+    },
+    {
+        "id": "9e8f0c29fc354f61",
+        "type": "file in",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "filename": "Litho",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 930,
+        "y": 760,
+        "wires": [
+            [
+                "1ef40af0e018c9d4"
+            ]
+        ]
+    },
+    {
+        "id": "1ef40af0e018c9d4",
+        "type": "discordMessageManager",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "channel": "",
+        "token": "",
+        "x": 1130,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82205324b43dbd6a",
+        "type": "switch",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "temp",
+                "vt": "str",
+                "case": true
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 800,
+        "wires": [
+            [
+                "8c93107de6df04e4"
+            ]
+        ]
+    },
+    {
+        "id": "befcb7a5fe7b40b7",
+        "type": "serial in",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "serial": "0e1173c215ed3043",
+        "x": 350,
+        "y": 640,
+        "wires": [
+            [
+                "e35d84ec91199c69"
+            ]
+        ]
+    },
+    {
+        "id": "f4a424b8fcc65609",
+        "type": "debug",
+        "z": "f0de644b883e937c",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "e35d84ec91199c69",
+        "type": "file",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "filename": "Litho",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 490,
+        "y": 640,
+        "wires": [
+            [
+                "c5654eaa7e38eca3"
+            ]
+        ]
+    },
+    {
+        "id": "c5654eaa7e38eca3",
+        "type": "file in",
+        "z": "f0de644b883e937c",
+        "name": "",
+        "filename": "Litho",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 630,
+        "y": 640,
+        "wires": [
+            [
+                "f4a424b8fcc65609"
+            ]
+        ]
+    },
+    {
+        "id": "87ba4ea4afd325f5",
+        "type": "comment",
+        "z": "f0de644b883e937c",
+        "name": "Read Serial Input.",
+        "info": "",
+        "x": 390,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e981016d74ca3f71",
+        "type": "comment",
+        "z": "f0de644b883e937c",
+        "name": "Set Token Here.",
+        "info": "",
+        "x": 380,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "e3d1c25f102fda4e",
+        "type": "comment",
+        "z": "f0de644b883e937c",
+        "name": "Set Token Here.",
+        "info": "",
+        "x": 1100,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "0e1173c215ed3043",
+        "type": "serial-port",
+        "name": "feather",
+        "serialport": "/dev/ttyACM1",
+        "serialbaud": "57600",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    }
+]
