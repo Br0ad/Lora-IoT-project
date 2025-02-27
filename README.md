@@ -5,4 +5,4 @@
 ## H2 Dependencies
 - [2 Adafruit RFM95 feathers running circuit python](https://learn.adafruit.com/feather-rp2040-rfm95/overview)
 - [Node Red](https://nodered.org/)
-... [node-red-contrib-discord-advanced](https://github.com/Markoudstaal/node-red-contrib-discord-advanced)
+-   [node-red-contrib-discord-advanced](https://github.com/Markoudstaal/node-red-contrib-discord-advanced)
